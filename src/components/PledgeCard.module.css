@@ -1,0 +1,21 @@
+.card {
+  height: 1200px;
+  width: 90vw;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.header {
+  font-weight: 700;
+}
+
+.description {
+  color: var(--subtext-gray);
+  margin-top: 20px;
+}

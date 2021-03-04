@@ -1,0 +1,42 @@
+.card {
+  height: 475px;
+  width: 90vw;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.infohead {
+  font-weight: 700;
+}
+
+.infosub {
+  color: var(--subtext-gray);
+  margin-top: 8px;
+}
+
+.rule {
+  margin: 20px auto 0 auto;
+  width: 100px;
+  color: white;
+}
+
+.outerbar {
+  background-color: #E0E0E0;
+  width: 275px;
+  height: 15px;
+  border-radius: 40px;
+}
+
+.innerbar {
+  background-color: var(--primary-moderate-cyan);
+  width: 66%;
+  height: 15px;
+  border-radius: 40px;
+}

@@ -1,0 +1,23 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 20px;
+}
+
+.hero {
+  position: fixed;
+  height: auto;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.logo {
+  /* has tendency to go behind hero */
+  z-index: 10;
+  height: 20px;
+  width: auto;
+}

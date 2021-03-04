@@ -1,6 +1,7 @@
 *,
 *::after,
-*::before {
+*::before,
+html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -11,9 +12,19 @@
 	--primary-dark-cyan: hsl(176, 72%, 28%);
 	--black: hsl(0, 0, 0);
 	--dark-gray: hsl(0, 0, 48%);
+	--subtext-gray: #757575;
 }
 
 body {
 	font-size: 16px;
 	font-family: 'Commissioner', sans-serif;
+	background-color: #F5F5F5;
+	padding-bottom: 200px;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
