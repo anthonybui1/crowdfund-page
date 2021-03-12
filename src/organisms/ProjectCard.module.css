@@ -1,50 +1,52 @@
 .card {
-  height: 275px;
-  width: 90vw;
-  margin-top: 175px;
-  border-radius: 10px;
-  background-color: #FAFAFA;
-  border: 1px solid #E0E0E0;
+	height: 275px;
+	width: 90vw;
+	margin-top: 175px;
+	border-radius: 10px;
+	background-color: #fafafa;
+	border: 1px solid #e0e0e0;
 }
 
 .logo {
-  position: relative;
-  top: -10%;
-  left: 42%;
+	position: relative;
+	top: -10%;
+	left: 42%;
 }
 
-.projectname  {
-  text-align: center;
-  padding: 0 60px;
+.projectname {
+	text-align: center;
+	padding: 0 60px;
 }
 
 .projectinfo {
-  text-align: center; 
-  color: var(--subtext-gray);
-  margin-top: 20px;
+	text-align: center;
+	color: var(--subtext-gray);
+	margin-top: 20px;
 }
 
 .controlwrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .btn {
-  padding: 15px 40px;
-  border-radius: 25px;
-  border: none;
-  background-color: var(--primary-moderate-cyan);
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
+	padding: 15px 40px;
+	border-radius: 25px;
+	border: none;
+	background-color: var(--primary-moderate-cyan);
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--primary-dark-cyan);
+	background-color: var(--primary-dark-cyan);
 }
 
 .bookmarkicon {
-  margin-left: 10px;
+	margin-left: 10px;
 }
+
+

@@ -13,6 +13,7 @@ html {
 	--black: hsl(0, 0, 0);
 	--dark-gray: hsl(0, 0, 48%);
 	--subtext-gray: #757575;
+	--border-gray: #E0E0E0;
 }
 
 body {

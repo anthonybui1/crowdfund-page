@@ -1,32 +1,44 @@
 .modalcontainer {
-  z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalbody {
+	z-index: 20;
 	position: absolute;
 	top: 0;
 	margin: 27% 0 0 5%;
 	width: 90%;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 0 0 200px 4000px rgba(0, 0, 0, 0.4);
-}
-
-.modalbody {
-  padding: 20px;
+	padding: 1.5rem;
 }
 
 .closeicon {
-  position: absolute;
-  top: 20%;
-  left: 90%;
+	width: 15px;
+	height: 15px;
 }
 
 .header {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
+}
+
+.headericonrow {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .description {
-  margin-top: 1rem;
-  color: var(--subtext-gray);
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  font-weight: 500;
+	margin-top: 1rem;
+	color: var(--subtext-gray);
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	font-weight: 500;
 }

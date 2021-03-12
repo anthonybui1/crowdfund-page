@@ -14,8 +14,8 @@ const Menu = () => {
 		});
 
 		return window.removeEventListener('resize', () => {
-			console.log('Resize event listener cleaned up!')
-		})
+			console.log('Resize event listener cleaned up!');
+		});
 	}, [windowWidth]);
 
 	const renderDesktopMenu = () => {
@@ -36,11 +36,21 @@ const Menu = () => {
 
 	const renderMobileMenu = () => {
 		return (
-			<div onClick={() => setOpen(!isOpen)}>
+			<div>
 				{isOpen ? (
-					<img src={closeMenuButton} alt='close menu button' className={styles.hamburger} />
+					<img
+						onClick={() => setOpen(false)}
+						src={closeMenuButton}
+						alt='close menu button'
+						className={styles.hamburger}
+					/>
 				) : (
-					<img src={hamburgerButton} alt='open menu button' className={styles.hamburger} />
+					<img
+						onClick={() => setOpen(true)}
+						src={hamburgerButton}
+						alt='open menu button'
+						className={styles.hamburger}
+					/>
 				)}
 			</div>
 		);
