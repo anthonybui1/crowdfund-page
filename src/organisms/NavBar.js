@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/logo.svg';
 import hero from '../images/image-hero-mobile.jpg';
 import styles from './NavBar.module.css';
-import Menu from './Menu';
+import Menu from '../molecules/Menu';
 
 const NavBar = () => {
 	return (

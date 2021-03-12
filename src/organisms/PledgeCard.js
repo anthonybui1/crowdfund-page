@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PledgeCard.module.css';
-import InnerPledgeCard from './InnerPledgeCard';
+import InnerPledgeCard from '../molecules/InnerPledgeCard';
 
 const PledgeCard = () => {
 	return (

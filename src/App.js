@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import ProjectCard from './components/ProjectCard';
-import StatsCard from './components/StatsCard';
-import PledgeCard from './components/PledgeCard';
+import NavBar from './organisms/NavBar';
+import ProjectCard from './organisms/ProjectCard';
+import StatsCard from './organisms/StatsCard';
+import PledgeCard from './organisms/PledgeCard';
 
 const App = () => {
 	return (
