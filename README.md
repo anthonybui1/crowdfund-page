@@ -1,7 +1,7 @@
 # Crowdfund Page
 
 ## Description
-A basic crowdfunding landing page for an imaginary product. Created for a [frontendmentors.io](frontendmentors.io) challenge.
+A basic crowdfunding landing page for an imaginary product. Created for a [frontendmentor.io](frontendmentor.io) challenge.
 
 ## Technologies 
 - HTML

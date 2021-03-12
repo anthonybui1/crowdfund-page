@@ -1,0 +1,24 @@
+.menucard {
+  position: absolute;
+  top: 75px;
+  left: 10%;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 0 200px 100px rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.linktext {
+  padding: 20px;
+  font-weight: 500;
+}
+
+.rule {
+  border-bottom: 1px solid #EFEFEF;
+}
