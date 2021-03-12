@@ -1,0 +1,32 @@
+.modalcontainer {
+  z-index: 10;
+	position: absolute;
+	top: 0;
+	margin: 27% 0 0 5%;
+	width: 90%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 200px 4000px rgba(0, 0, 0, 0.4);
+}
+
+.modalbody {
+  padding: 20px;
+}
+
+.closeicon {
+  position: absolute;
+  top: 20%;
+  left: 90%;
+}
+
+.header {
+  font-size: 1.2rem;
+}
+
+.description {
+  margin-top: 1rem;
+  color: var(--subtext-gray);
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}

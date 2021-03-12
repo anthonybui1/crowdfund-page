@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import hamburgerButton from '../images/icon-hamburger.svg';
+import closeMenuButton from '../images/icon-close-menu.svg';
 import styles from './Menu.module.css';
 import MobileMenu from './MobileMenu';
 
@@ -11,6 +12,10 @@ const Menu = () => {
 		window.addEventListener('resize', () => {
 			setWindowWidth(window.innerWidth);
 		});
+
+		return window.removeEventListener('resize', () => {
+			console.log('Resize event listener cleaned up!')
+		})
 	}, [windowWidth]);
 
 	const renderDesktopMenu = () => {
@@ -32,7 +37,11 @@ const Menu = () => {
 	const renderMobileMenu = () => {
 		return (
 			<div onClick={() => setOpen(!isOpen)}>
-				<img src={hamburgerButton} alt='menu button' className={styles.hamburger} />
+				{isOpen ? (
+					<img src={closeMenuButton} alt='close menu button' className={styles.hamburger} />
+				) : (
+					<img src={hamburgerButton} alt='open menu button' className={styles.hamburger} />
+				)}
 			</div>
 		);
 	};
