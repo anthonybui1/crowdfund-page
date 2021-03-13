@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './InnerPledgeCard.module.css';
 
-const InnerPledgeCard = () => {
+const InnerPledgeCard = ({ setModalPresence }) => {
 	return (
 		<div className={styles.card}>
 			<div className={styles.header}>
@@ -18,7 +18,9 @@ const InnerPledgeCard = () => {
 				<h2>101</h2>
 				<p className={styles.subtext}>left</p>
 			</div>
-			<button className={styles.btn}>Select Reward</button>
+			<button onClick={() => setModalPresence(true)} className={styles.btn}>
+				Select Reward
+			</button>
 		</div>
 	);
 };

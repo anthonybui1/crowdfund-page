@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import styles from './ProjectCard.module.css';
 import logo from '../images/logo-mastercraft.svg';
-import Modal from './Modal';
-import SuccessModal from '../molecules/SuccessModal';
 
-const ProjectCard = () => {
-	const [modalPresence, setModalPresence] = useState(false);
-	const [successModalPresence, setSuccessModalPresence] = useState(false);
+const ProjectCard = ({ setModalPresence }) => {
 	const [isBookmarked, setIsBookmarked] = useState(false);
 
 	return (
@@ -34,13 +30,6 @@ const ProjectCard = () => {
 					</g>
 				</svg>
 			</div>
-			{modalPresence && (
-				<Modal
-					setModalPresence={setModalPresence}
-					setSuccessModalPresence={setSuccessModalPresence}
-				/>
-			)}
-			{successModalPresence && <SuccessModal setSuccessModalPresence={setSuccessModalPresence} />}
 		</div>
 	);
 };

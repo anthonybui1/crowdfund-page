@@ -9,6 +9,7 @@
 
 .modalbody {
 	width: 90%;
+	max-width: 800px;
 	border-radius: 1rem;
 	height: 50%;
 	background-color: white;
