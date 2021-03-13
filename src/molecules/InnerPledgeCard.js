@@ -15,12 +15,8 @@ const InnerPledgeCard = () => {
 				</p>
 			</div>
 			<div className={styles.remaining}>
-				<h2>
-					101
-				</h2>
-				<p className={styles.subtext}>
-					left
-				</p>
+				<h2>101</h2>
+				<p className={styles.subtext}>left</p>
 			</div>
 			<button className={styles.btn}>Select Reward</button>
 		</div>

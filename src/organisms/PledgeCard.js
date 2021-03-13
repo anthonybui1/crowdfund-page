@@ -18,9 +18,9 @@ const PledgeCard = () => {
 					your computer to allow notepads, pens, and USB sticks to be stored under the stand.
 				</p>
 			</div>
-      <InnerPledgeCard />
-      <InnerPledgeCard />
-      <InnerPledgeCard />
+			<InnerPledgeCard />
+			<InnerPledgeCard />
+			<InnerPledgeCard />
 		</div>
 	);
 };

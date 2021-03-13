@@ -1,37 +1,38 @@
 .container {
-  border-top: 1px solid var(--border-gray);
-  margin-top: 1.5rem;
-  padding: 1.5rem 1rem 1rem 1rem;
+	border-top: 1px solid var(--border-gray);
+	margin-top: 1.5rem;
+	padding: 1.5rem 1rem 1rem 1rem;
 }
 
 .prompt {
-  text-align: center;
-  color: var(--subtext-gray);
+	text-align: center;
+	color: var(--subtext-gray);
 }
 
 .formwrapper {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .input {
-  width: 40%;
-  border-radius: 1.5rem;
-  border: 1px solid var(--border-gray);
-  padding: 0.7rem 1.5rem;
-  font-weight: 500;
+	width: 40%;
+	border-radius: 1.5rem;
+	border: 1px solid var(--border-gray);
+	padding: 0.7rem 1.5rem;
+	font-weight: 500;
 }
 
 .btn {
-  border-radius: 1.5rem;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  background-color: var(--primary-moderate-cyan);
-  color: white;
-  font-weight: 500;
+	border-radius: 1.5rem;
+	border: none;
+	padding: 0.7rem 1.5rem;
+	background-color: var(--primary-moderate-cyan);
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--primary-dark-cyan);
+	background-color: var(--primary-dark-cyan);
 }

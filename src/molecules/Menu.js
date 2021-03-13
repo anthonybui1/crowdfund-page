@@ -34,19 +34,25 @@ const Menu = () => {
 		);
 	};
 
+	const handleClick = () => {
+		setTimeout(() => {
+			setOpen(!isOpen);
+		}, 50);
+	};
+
 	const renderMobileMenu = () => {
 		return (
 			<div>
 				{isOpen ? (
 					<img
-						onClick={() => setOpen(false)}
+						onClick={handleClick}
 						src={closeMenuButton}
 						alt='close menu button'
 						className={styles.hamburger}
 					/>
 				) : (
 					<img
-						onClick={() => setOpen(true)}
+						onClick={handleClick}
 						src={hamburgerButton}
 						alt='open menu button'
 						className={styles.hamburger}
@@ -59,7 +65,7 @@ const Menu = () => {
 	return (
 		<React.Fragment>
 			{windowWidth > 864 ? renderDesktopMenu() : renderMobileMenu()}
-			{isOpen && <MobileMenu />}
+			{isOpen && <MobileMenu setOpen={setOpen} />}
 		</React.Fragment>
 	);
 };

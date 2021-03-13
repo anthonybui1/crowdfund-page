@@ -19,7 +19,10 @@ const InnerModalCard = ({ setModalPresence, setSuccessModalPresence }) => {
 			<h3>
 				101<span className={styles.span}> left</span>
 			</h3>
-			<InnerModalPledge setModalPresence={setModalPresence} setSuccessModalPresence={setSuccessModalPresence}/>
+			<InnerModalPledge
+				setModalPresence={setModalPresence}
+				setSuccessModalPresence={setSuccessModalPresence}
+			/>
 		</div>
 	);
 };

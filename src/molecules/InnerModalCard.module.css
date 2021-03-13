@@ -1,47 +1,47 @@
 .cardbody {
-  border: 1px solid var(--border-gray);
-  border-radius: 1rem;
-  margin: 1.5rem 0;
-  padding: 1.5rem 1rem;
+	border: 1px solid var(--border-gray);
+	border-radius: 1rem;
+	margin: 1.5rem 0;
+	padding: 1.5rem 1rem;
 }
 
 .circle {
-  height: 1.5rem;
-  width: 1.5rem;
-  border: 1px solid var(--border-gray);
-  border-radius: 50%;
-  cursor: pointer;
+	height: 1.5rem;
+	width: 1.5rem;
+	border: 1px solid var(--border-gray);
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .headerwrapper {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .headertext {
-  margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .header {
-  font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 .subheader {
-  color: var(--primary-moderate-cyan);
-  font-weight: 500;
-  font-size: 1rem;
-  margin-top: 0.5rem;
+	color: var(--primary-moderate-cyan);
+	font-weight: 500;
+	font-size: 1rem;
+	margin-top: 0.5rem;
 }
 
 .description {
-  margin: 1rem 0;
-  line-height: 1.5rem;
-  color: var(--subtext-gray);
+	margin: 1rem 0;
+	line-height: 1.5rem;
+	color: var(--subtext-gray);
 }
 
 .span {
-  color: var(--subtext-gray);
-  margin-left: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400;
+	color: var(--subtext-gray);
+	margin-left: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
 }

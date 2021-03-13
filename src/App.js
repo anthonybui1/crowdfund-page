@@ -6,7 +6,7 @@ import PledgeCard from './organisms/PledgeCard';
 
 const App = () => {
 	return (
-		<div>
+		<div className='container'>
 			<NavBar />
 			<main>
 				<ProjectCard />
