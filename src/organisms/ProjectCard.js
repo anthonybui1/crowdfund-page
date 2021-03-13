@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ProjectCard.module.css';
 import logo from '../images/logo-mastercraft.svg';
+import BookmarkSlider from '../molecules/BookmarkSlider';
 
 const ProjectCard = ({ setModalPresence }) => {
 	const [isBookmarked, setIsBookmarked] = useState(false);
@@ -29,6 +30,7 @@ const ProjectCard = ({ setModalPresence }) => {
 						<path fill='#B1B1B1' d='M23 19v18l5-5.058L33 37V19z' />
 					</g>
 				</svg>
+				<BookmarkSlider isBookmarked={isBookmarked} setIsBookmarked={setIsBookmarked} />
 			</div>
 		</div>
 	);

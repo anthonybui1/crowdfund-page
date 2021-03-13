@@ -1,0 +1,15 @@
+.slidertray {
+	background-color: var(--border-gray);
+	width: 170px;
+	border-radius: 2rem;
+}
+
+.activebookmark {
+	transform: translateX(114px) translateY(2px);
+	transition: transform 0.4s ease-in-out;
+}
+
+.inactivebookmark {
+	transform: translateX(0) translateY(2px);
+	transition: transform 0.4s ease-in-out;
+}
