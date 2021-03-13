@@ -17,6 +17,9 @@ const BookmarkSlider = ({ isBookmarked, setIsBookmarked }) => {
 					<path fill='#B1B1B1' d='M23 19v18l5-5.058L33 37V19z' />
 				</g>
 			</svg>
+			<span className={`${styles.span} ${isBookmarked && styles.spanactive}`}>
+				{isBookmarked ? 'Bookmarked' : 'Bookmark'}
+			</span>
 		</div>
 	);
 };

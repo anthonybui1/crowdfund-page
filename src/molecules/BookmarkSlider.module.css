@@ -2,6 +2,7 @@
 	background-color: var(--border-gray);
 	width: 170px;
 	border-radius: 2rem;
+	margin-left: 10px;
 }
 
 .activebookmark {
@@ -12,4 +13,18 @@
 .inactivebookmark {
 	transform: translateX(0) translateY(2px);
 	transition: transform 0.4s ease-in-out;
+}
+
+.span {
+	position: relative;
+	top: -22px;
+	left: 8px;
+	font-weight: 500;
+	transition: left 0.6s ease-in-out;
+}
+
+.spanactive {
+	left: -43px;
+	color: var(--primary-dark-cyan);
+	transition: left 0.4s ease-in-out;
 }
