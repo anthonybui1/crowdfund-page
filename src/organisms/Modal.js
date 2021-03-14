@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import styles from './Modal.module.css';
 import closeIcon from '../images/icon-close-modal.svg';
 import InnerModalCard from '../molecules/InnerModalCard';
+import { data } from '../api/data';
 
 const Modal = ({ setModalPresence, setSuccessModalPresence }) => {
 	const [selected, setSelected] = useState(null);
@@ -43,29 +44,30 @@ const Modal = ({ setModalPresence, setSuccessModalPresence }) => {
 					Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
 				</p>
 				<InnerModalCard
+					title='Pledge with no reward'
+					pledgeAmount=''
+					description='Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.'
+					remaining=''
 					selected={selected}
-					radioValue='choice1'
+					radioValue={'nullchoice'}
 					setModalPresence={setModalPresence}
 					setSuccessModalPresence={setSuccessModalPresence}
 				/>
-				<InnerModalCard
-					selected={selected}
-					radioValue='choice2'
-					setModalPresence={setModalPresence}
-					setSuccessModalPresence={setSuccessModalPresence}
-				/>
-				<InnerModalCard
-					selected={selected}
-					radioValue='choice3'
-					setModalPresence={setModalPresence}
-					setSuccessModalPresence={setSuccessModalPresence}
-				/>
-				<InnerModalCard
-					selected={selected}
-					radioValue='choice4'
-					setModalPresence={setModalPresence}
-					setSuccessModalPresence={setSuccessModalPresence}
-				/>
+				{data.map((item) => {
+					return (
+						<InnerModalCard
+							key={item.key}
+							title={item.title}
+							pledgeAmount={item.pledgeAmount}
+							description={item.description}
+							remaining={item.remaining}
+							selected={selected}
+							radioValue={'choice' + item.key.toString()}
+							setModalPresence={setModalPresence}
+							setSuccessModalPresence={setSuccessModalPresence}
+						/>
+					);
+				})}
 			</div>
 		</React.Fragment>,
 		document.getElementById('modal')

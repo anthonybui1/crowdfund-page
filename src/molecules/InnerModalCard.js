@@ -2,11 +2,20 @@ import React, { useState } from 'react';
 import styles from './InnerModalCard.module.css';
 import InnerModalPledge from './InnerModalPledge';
 
-const InnerModalCard = ({ setModalPresence, setSuccessModalPresence, radioValue, selected }) => {
+const InnerModalCard = ({
+	setModalPresence,
+	setSuccessModalPresence,
+	radioValue,
+	selected,
+	title,
+	pledgeAmount,
+	description,
+	remaining,
+}) => {
 	const [text, setText] = useState('');
 
 	const renderPledgeForm = () => {
-		if (selected === radioValue) {
+		if (selected === radioValue && remaining !== '0') {
 			return (
 				<InnerModalPledge
 					text={text}
@@ -18,22 +27,28 @@ const InnerModalCard = ({ setModalPresence, setSuccessModalPresence, radioValue,
 		}
 	};
 
+	const renderRemaining = () => {
+		if (remaining) {
+			return (
+				<React.Fragment>
+					{remaining}
+					<span className={styles.span}> left</span>
+				</React.Fragment>
+			);
+		}
+	};
+
 	return (
 		<div className={styles.cardbody}>
 			<div className={styles.headerwrapper}>
 				<input type='radio' value={radioValue} name='item'></input>
 				<div className={styles.headertext}>
-					<h3 className={styles.header}>Bamboo Stand</h3>
-					<p className={styles.subheader}>Pledge $25 or more</p>
+					<h3 className={styles.header}>{title}</h3>
+					<p className={styles.subheader}>{pledgeAmount ? `Pledge ${pledgeAmount} or more` : ''}</p>
 				</div>
 			</div>
-			<p className={styles.description}>
-				You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional
-				campaign, and you'll be added to a special Backer member list.
-			</p>
-			<h3>
-				101<span className={styles.span}> left</span>
-			</h3>
+			<p className={styles.description}>{description}</p>
+			<h3>{renderRemaining()}</h3>
 			{renderPledgeForm()}
 		</div>
 	);
