@@ -13,6 +13,15 @@
 	cursor: pointer;
 }
 
+.clicked {
+	height: 1.5rem;
+	width: 1.5rem;
+	border: 1px solid var(--primary-moderate-cyan);
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: var(--primary-moderate-cyan);
+}
+
 .headerwrapper {
 	display: flex;
 	align-items: center;

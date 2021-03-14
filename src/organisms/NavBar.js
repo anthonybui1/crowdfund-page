@@ -9,7 +9,7 @@ const NavBar = () => {
 	return (
 		<React.Fragment>
 			<picture>
-				<source media='(max-width: 864px)' srcset={mobilehero} />
+				<source media='(max-width: 864px)' srcSet={mobilehero} />
 				<img src={hero} alt='hero' className={styles.hero} />
 			</picture>
 			<header className={styles.navbar}>
@@ -21,5 +21,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// 			<img src={hero} alt='hero' className={styles.hero} />

@@ -18,4 +18,5 @@
 .description {
 	color: var(--subtext-gray);
 	margin-top: 20px;
+	line-height: 1.5rem;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './PledgeCard.module.css';
 import InnerPledgeCard from '../molecules/InnerPledgeCard';
+import { data } from '../api/data';
 
 const PledgeCard = ({ setModalPresence }) => {
 	return (
@@ -18,9 +19,18 @@ const PledgeCard = ({ setModalPresence }) => {
 					your computer to allow notepads, pens, and USB sticks to be stored under the stand.
 				</p>
 			</div>
-			<InnerPledgeCard setModalPresence={setModalPresence} />
-			<InnerPledgeCard setModalPresence={setModalPresence} />
-			<InnerPledgeCard setModalPresence={setModalPresence} />
+			{data.map((item) => {
+				return (
+					<InnerPledgeCard
+						key={item.key}
+						title={item.title}
+						pledgeAmount={item.pledgeAmount}
+						description={item.description}
+						remaining={item.remaining}
+						setModalPresence={setModalPresence}
+					/>
+				);
+			})}
 		</div>
 	);
 };
