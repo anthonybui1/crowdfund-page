@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './InnerPledgeCard.module.css';
+import styles from './PledgeInnerCard.module.css';
 
-const InnerPledgeCard = ({ setModalPresence, title, pledgeAmount, description, remaining }) => {
+const PledgeInnerCard = ({ setModalPresence, title, pledgeAmount, description, remaining }) => {
 	const handleClick = () => {
 		window.scrollTo(0, 0);
 		setModalPresence(true);
@@ -27,4 +27,4 @@ const InnerPledgeCard = ({ setModalPresence, title, pledgeAmount, description, r
 	);
 };
 
-export default InnerPledgeCard;
+export default PledgeInnerCard;

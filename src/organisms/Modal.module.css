@@ -1,4 +1,5 @@
 .modalcontainer {
+	/* This modal container is primarily for listening to clickaways */
 	width: 100%;
 	height: 100%;
 	position: fixed;

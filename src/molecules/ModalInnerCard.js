@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './InnerModalCard.module.css';
-import InnerModalPledge from './InnerModalPledge';
+import styles from './ModalInnerCard.module.css';
+import ModalPledge from './ModalPledge';
 
-const InnerModalCard = ({
+const ModalInnerCard = ({
 	setModalPresence,
 	setSuccessModalPresence,
 	radioValue,
@@ -17,7 +17,7 @@ const InnerModalCard = ({
 	const renderPledgeForm = () => {
 		if (selected === radioValue && remaining !== '0') {
 			return (
-				<InnerModalPledge
+				<ModalPledge
 					text={text}
 					setText={setText}
 					setModalPresence={setModalPresence}
@@ -44,7 +44,9 @@ const InnerModalCard = ({
 				<input type='radio' value={radioValue} name='item'></input>
 				<div className={styles.headertext}>
 					<h3 className={styles.header}>{title}</h3>
-					<p className={styles.subheader}>{pledgeAmount ? `Pledge ${pledgeAmount} or more` : ''}</p>
+					<p className={styles.subheader}>
+						{pledgeAmount ? `Pledge $${pledgeAmount} or more` : ''}
+					</p>
 				</div>
 			</div>
 			<p className={styles.description}>{description}</p>
@@ -54,4 +56,4 @@ const InnerModalCard = ({
 	);
 };
 
-export default InnerModalCard;
+export default ModalInnerCard;

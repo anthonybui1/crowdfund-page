@@ -2,10 +2,10 @@ import React from 'react';
 import logo from '../images/logo.svg';
 import hero from '../images/image-hero-desktop.jpg';
 import mobilehero from '../images/image-hero-mobile.jpg';
-import styles from './NavBar.module.css';
+import styles from './Header.module.css';
 import Menu from '../molecules/Menu';
 
-const NavBar = () => {
+const Header = () => {
 	return (
 		<React.Fragment>
 			<picture>
@@ -20,4 +20,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default Header;

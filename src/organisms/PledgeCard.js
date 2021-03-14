@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PledgeCard.module.css';
-import InnerPledgeCard from '../molecules/InnerPledgeCard';
+import PledgeInnerCard from '../molecules/PledgeInnerCard';
 import { data } from '../api/data';
 
 const PledgeCard = ({ setModalPresence }) => {
@@ -21,7 +21,7 @@ const PledgeCard = ({ setModalPresence }) => {
 			</div>
 			{data.map((item) => {
 				return (
-					<InnerPledgeCard
+					<PledgeInnerCard
 						key={item.key}
 						title={item.title}
 						pledgeAmount={item.pledgeAmount}

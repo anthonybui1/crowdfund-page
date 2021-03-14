@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from './organisms/NavBar';
+import Header from './organisms/Header';
 import ProjectCard from './organisms/ProjectCard';
 import StatsCard from './organisms/StatsCard';
 import PledgeCard from './organisms/PledgeCard';
@@ -12,7 +12,7 @@ const App = () => {
 
 	return (
 		<div className='container'>
-			<NavBar />
+			<Header />
 			<main>
 				<ProjectCard setModalPresence={setModalPresence} />
 				<StatsCard />

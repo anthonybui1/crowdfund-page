@@ -22,13 +22,13 @@ const MobileMenu = ({ setOpen }) => {
 
 	return (
 		<nav className={styles.menucard}>
-			<a href='/' className={styles.link}>
+			<a href='#root' className={styles.link}>
 				<div className={`${styles.linktext} ${styles.rule}`}>About</div>
 			</a>
-			<a href='/' className={styles.link}>
+			<a href='#root' className={styles.link}>
 				<div className={`${styles.linktext} ${styles.rule}`}>Discover</div>
 			</a>
-			<a href='/' className={styles.link}>
+			<a href='#root' className={styles.link}>
 				<div className={styles.linktext}>Get Started</div>
 			</a>
 		</nav>

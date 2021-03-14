@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import styles from './Modal.module.css';
 import closeIcon from '../images/icon-close-modal.svg';
-import InnerModalCard from '../molecules/InnerModalCard';
+import ModalInnerCard from '../molecules/ModalInnerCard';
 import { data } from '../api/data';
 
 const Modal = ({ setModalPresence, setSuccessModalPresence }) => {
@@ -43,7 +43,7 @@ const Modal = ({ setModalPresence, setSuccessModalPresence }) => {
 				<p className={styles.description}>
 					Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
 				</p>
-				<InnerModalCard
+				<ModalInnerCard
 					title='Pledge with no reward'
 					pledgeAmount=''
 					description='Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.'
@@ -55,7 +55,7 @@ const Modal = ({ setModalPresence, setSuccessModalPresence }) => {
 				/>
 				{data.map((item) => {
 					return (
-						<InnerModalCard
+						<ModalInnerCard
 							key={item.key}
 							title={item.title}
 							pledgeAmount={item.pledgeAmount}

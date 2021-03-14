@@ -1,12 +1,12 @@
 # Crowdfund Page
 
 ## Description
-A basic crowdfunding landing page for an imaginary product. Created for a [frontendmentor.io](frontendmentor.io) challenge.
+A crowdfunding landing page for a series of ergonomic computer stands. Created for a [frontendmentor.io](frontendmentor.io) challenge where the assets and style guides are provided but you are allowed to implement the design in any way you wish. For this challenge I chose the technologies listed below. The file structure is inspired by [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) but it does not implement every possible level due to size.
 
 ## Technologies 
-- HTML
-- CSS
 - React
+- CSS Modules
+- HTML
 
 ## Installation
 

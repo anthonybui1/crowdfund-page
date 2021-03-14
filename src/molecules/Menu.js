@@ -21,13 +21,13 @@ const Menu = () => {
 	const renderDesktopMenu = () => {
 		return (
 			<nav className={styles.nav}>
-				<a href='/' className={styles.link}>
+				<a href='#root' className={styles.link}>
 					About
 				</a>
-				<a href='/' className={styles.link}>
+				<a href='#root' className={styles.link}>
 					Discover
 				</a>
-				<a href='/' className={styles.link}>
+				<a href='#root' className={styles.link}>
 					Get Started
 				</a>
 			</nav>

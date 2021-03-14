@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './InnerModalPledge.module.css';
+import styles from './ModalPledge.module.css';
 
-const InnerModalPledge = ({ setModalPresence, setSuccessModalPresence, text, setText }) => {
+const ModalPledge = ({ setModalPresence, setSuccessModalPresence, text, setText }) => {
 	const handleClick = () => {
 		setModalPresence(false);
 		setSuccessModalPresence(true);
@@ -28,4 +28,4 @@ const InnerModalPledge = ({ setModalPresence, setSuccessModalPresence, text, set
 	);
 };
 
-export default InnerModalPledge;
+export default ModalPledge;
